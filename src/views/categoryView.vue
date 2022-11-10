@@ -13,7 +13,6 @@
     </div>
   </div>
 </template>
-
 <script>
 // @ is an alias to /src
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
@@ -21,6 +20,8 @@ import db from "../firebase";
 export default {
   data() {
     return {
+      temp_params: "",
+      params: "",
       todos: [],
     };
   },
